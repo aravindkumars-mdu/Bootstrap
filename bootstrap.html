@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Resume</title>
+	<!-- Bootstrap 3 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery UI CSS -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+	<!-- Font Awesome (icons) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!--custom CSS file -->
+	<link rel="stylesheet" href="bootstrap_excer.css">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<!-- jQuery UI -->
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+	<!-- Bootstrap 3 JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!-- Main Header + Navigation-->
+	<section class="container-fluid">
+		<div class="page-header text-center bg-primary header">
+			<h2 class="heading-2" id="header_name">Aravindkumar</h2>
+		</div>
+		<!-- Center content row: Left nav (tabs) + Right content (tab panes) -->
+		<div class="row nav-center-content center-content">
+			<!-- LEFT NAV (vertical tabs) -->
+			<div class="col-sm-12 col-md-4 col-lg-3 tablet-left-nav">
+				<ul class="nav nav-tabs nav-stacked tabs-left" role="tablist">
+					<li class="active">
+						<a href="#objectives" role="tab" data-toggle="tab" title="View your career objectives">
+							<span class="glyphicon glyphicon-flag icon"></span>
+							Objectives
+							<span class="badge">1</span>
+						</a>
+					</li>
+					<li>
+						<a href="#technical_skills" role="tab" data-toggle="tab" title="View your technical skills">
+							<i class="fa-solid fa-user icon"></i>
+							Technical skills
+							<span class="badge">3</span>
+						</a>
+					</li>
+					<li>
+						<a href="#education" role="tab" data-toggle="tab" title="View your education details">
+							<i class="fa-solid fa-graduation-cap icon"></i>
+							Education
+							<span class="badge">2</span>
+						</a>
+					</li>
+					<li>
+						<a href="#project" role="tab" data-toggle="tab" title="View your project work">
+							<i class="glyphicon glyphicon-tasks icon"></i>
+							Projects
+							<span class="badge">4</span>
+						</a>
+					</li>
+					<li>
+						<a href="#certificate" role="tab" data-toggle="tab" title="View your certifications">
+							<i class="glyphicon glyphicon-subtitles icon"></i>
+							Certification
+							<span class="badge">1</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- RIGHT CONTENT (tab panes) -->
+			<div class="col-sm-12 col-md-8 col-lg-9 tablet-right-content">
+				<div class="tab-content tabs-right-content">
+					<!-- Objectives Pane -->
+					<div id="objectives" class="tab-pane fade in active">
+						<h2 class="heading-2" class="sub-heading">Objectives:</h2>
+						<p>
+							A youngster seeking an opportunity for employment with a good Logical, Technical and
+							Analytical skills. I'm a strong hearted person who can quickly adapt to any situation and
+							committed to show and grow my skills in future.
+						</p>
+					</div>
+					<!-- Technical Skills Pane -->
+					<div id="technical_skills" class="tab-pane fade">
+						<h2 class="heading-2" class="sub-heading">Technical skills:</h2>
+						<ul>
+							<li>Java (OOP, JDK, Collections, Exception), Python(Basic), HTML, CSS, JavaScript.</li>
+							<li>React.js (Components, Hooks, State, Props), Spring Boot, JDBC (Database Connectivity,
+								CRUD Operations).</li>
+							<li>Postman, VS Code, Eclipse, GitHub.</li>
+						</ul>
+					</div>
+					<!-- Education Pane -->
+					<div id="education" class="tab-pane fade">
+						<h2 class="heading-2" class="sub-heading">Education:</h2>
+						<ol>
+							<li>Bachelor of Engineering (BE), EEE - Meenakshi Sundararajan Engineering College.</li>
+							<li>HSC - C.E.O.A. Matriculation Higher Secondary School.</li>
+							<li>SSLC - Sri Sundareswara Vidya Matriculation School.</li>
+						</ol>
+					</div>
+					<!-- Projects Pane -->
+					<div id="project" class="tab-pane fade">
+						<h2 class="sub-heading heading-2">Projects:</h2>
+						<h4 class="heading-4">1. Banking Application:</h4>
+						<ul>
+							<li>User Module: Manages user registration (CRUD), authentication, and associations with
+								accounts and loans.</li>
+							<li>Account Module: Handles account creation, balance management, and links accounts with
+								transactions.</li>
+							<li>Loan Module: Processes loan applications, approvals, and repayment tracking with
+								date-based updates.</li>
+							<li>Transaction Module: Records deposits, withdrawals, and transfers while maintaining
+								transaction history.</li>
+						</ul>
+						<h4 class="heading-4">2. AI-Powered Email Writer:</h4>
+						<ul>
+							<li>Designed and developed a full-stack web application to generate email replies with
+								selectable tones (Professional, Friendly, Casual, Custom).</li>
+							<li>Implemented Spring Boot REST API to process user input, apply tone-based reply logic,
+								and return refined responses.</li>
+							<li>Ensured seamless integration between frontend and backend with proper API handling,
+								validation, and CORS configuration.</li>
+						</ul>
+					</div>
+					<!-- Certification Pane -->
+					<div id="certificate" class="tab-pane fade">
+						<h2 class="sub-heading heading-2">Certification:</h2>
+						<ul>
+							<li>Completed Java Full Stack Developer.</li>
+							<li>Certified in Python Programming (Basic).</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- JavaScript Exercises Section -->
+	<section class="container-fluid" id="js_exercise_section">
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-lg-6 mobile-column">
+				<fieldset class="fieldset" id="datepicker_fieldset">
+					<form>
+						<!-- datePicker -->
+						<div class="form-group" id="date">
+							<h2 class="heading-2">DatePicker</h2>
+							<input type="text" id="datepicker" placeholder="DD/MM/YYYY" class="input-class form-control"><br>
+						</div>
+					</form>
+				</fieldset>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-6 mobile-column">
+				<fieldset class="fieldset">
+					<form>
+						<!-- Largest String input -->
+						<div class="form-group" id="autocomplete">
+							<h2 class="heading-2">Largest String</h2>
+							<input type="text" placeholder="select input" class="input-class form-control autocomplete-input-class"><br>
+						</div>
+					</form>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-lg-6 mobile-column">
+				<fieldset class="fieldset" id="fieldset_maximum">
+					<form>
+						<!-- Find Maximum of Two Numbers -->
+						<div class="form-group" id="maximum_number">
+							<h1 class="heading-1">Find Max of Two Numbers</h1>
+							<input type="number" id="number_1" class="input-class form-control" placeholder="number1"><br>
+							<input type="number" id="number_2" class="input-class form-control" placeholder="number2"><br>
+						</div>
+					</form>
+					<button type="button" class="button-style" id="max_button">Result</button><br>
+					<h2 class="heading-2" id="maximum_output"></h2>
+				</fieldset>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-6 mobile-column">
+				<fieldset class="fieldset" id="fieldset_cookie">
+					<form>
+						<!-- Save Data in Cookies -->
+						<div class="form-group" id="cookie">
+							<h1 class="heading-1">Cookies</h1>
+							<input type="text" placeholder="Enter name" id="cookie_name" class="input-class form-control"><br><br>
+							<input type="number" placeholder="Enter phone number" id="cookie_phone_number" class="input-class form-control">
+						</div>
+					</form>
+					<button id="cookie_button" class="button-style">Save</button>
+				</fieldset>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-md-6 col-lg-6 mobile-column">
+				<fieldset class="fieldset" id="largest_fieldset">
+					<form>
+						<!-- Find Largest Word -->
+						<div class="form-group" id="largest_word">
+							<h1 class="heading-1">Find Largest Word</h1>
+							<input type="text" id="largest_string" placeholder="Enter text" class="input-class form-control">
+						</div>
+					</form>
+					<button id="largest_button" class="button-style">Largest Word</button>
+					<h2 class="heading-2" id="largest_word_output"></h2>
+				</fieldset>
+			</div>
+			<div class="col-xs-12 col-md-6 col-lg-6 mobile-column">
+				<fieldset class="fieldset" id="reverse_fieldset">
+					<form>
+						<!--Reverse string-->
+						<div class="form-group" id="reverse_string">
+							<h1 class="heading-1">Reverse a String</h1>
+							<input type="text" placeholder="Enter text" class="input-class form-control" id="reverse_text">
+						</div>
+					</form>
+					<div class="reverse-content">
+						<button id="reverse_button" class="button-style">Reverse</button>
+						<h2 class="heading-2" id="reverse_output"></h2>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+		<!-- Toast component (custom for Bootstrap 3) -->
+		<div id="myToast" class="custom-toast">
+			<p id="toastMessage">This is a toast message!</p>
+		</div>
+		<!-- Slide Completed Modal (Bootstrap 3) -->
+		<div class="modal fade" id="slideModal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title heading-4">Animation Completed</h4>
+					</div>
+					<div class="modal-body">
+						<p>The slideDown animation has finished.</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="modal_ok">OK</button>
+						<button class="btn btn-default" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<div class="page-footer text-center bg-primary footer" id="my_page_footer">
+		<footer class="footer">
+			<!-- Contact information -->
+			<p>
+				<span class="footer-span">Contact no:</span>
+				<strong class="footer-strong" id="phone">9500917811</strong>
+			</p>
+			<p>
+				<span class="footer-span">Email Id:</span>
+				<strong class="footer-strong">aravindkumar@gmail.com</strong>
+			</p>
+		</footer>
+	</div>
+	<!-- JavaScript: event handlers & functions
+	     (No logic changed — only added comments + indentation) -->
+	<script>
+		$(document).ready(function () {
+			// Initialize Datepicker (jQuery UI)
+			$("#datepicker").datepicker({
+				dateFormat: "dd/mm/yy",
+				showAnim: "slideDown"
+			});
+
+			// SlideDown animation on header_name (10 seconds)
+			// After animation completes, show Bootstrap modal
+			$("#header_name").hide().slideDown(10000, function () {
+				$("#slideModal").modal("show");
+			});
+
+			// Modal OK button handler
+			$("#modal_ok").click(function () {
+				$("#slideModal").modal("hide");
+			});
+
+			// Autocomplete for all inputs with class .input_class
+			// (this includes largest_string)
+			$(function(){
+				var availableTags = [
+				"HTML",
+				"CSS",
+				"Javascript",
+				"Jquery",
+				"jquery ui",
+				"react",
+				"mysql",
+				"php",
+				"java",
+				"python"
+			];
+			$(".autocomplete-input-class").autocomplete({
+				source: availableTags,
+				minLength:0
+			}).click(function(){
+				$(this).autocomplete("search","");
+			});
+
+			})
+
+			// Initialize tooltips (Bootstrap 3)
+			$('[data-toggle="tooltip"]').tooltip();
+
+			// Button event bindings
+			// Maximum of two numbers
+			$("#max_button").click(function () {
+				const n1 = $("#number_1").val();
+				const n2 = $("#number_2").val();
+				maximumOfTwoNumber(n1, n2);
+			});
+
+			// Reverse string
+			$("#reverse_button").click(function () {
+				const inputString = $("#reverse_text").val();
+				reverseString(inputString);
+			});
+
+			// Show largest word from comma-separated list
+			$("#largest_button").click(function () {
+				showLargestWord();
+			});
+
+			// Save cookie + show toast
+			$("#cookie_button").click(function () {
+				saveCookie();
+				showToast("Cookie saved successfully!");
+			});
+		});
+
+		// showToast(message)
+		// Displays a small custom toast message (fade in/out)
+		function showToast(message) {
+			$("#toastMessage").text(message);
+			$("#myToast").fadeIn(400).delay(3000).fadeOut(400);
+		}
+
+		// maximumOfTwoNumber(val1, val2)
+		// Validates inputs and shows maximum
+		function maximumOfTwoNumber(val1, val2) {
+			if (isNaN(val1) || isNaN(val2) || val1 === "" || val2 === "") {
+				document.getElementById("maximum_output").innerHTML = "please enter both numbers!";
+				return;
+			}
+			else if(Number(val1)===Number(val2)){
+				alert("both number is same!");
+				return;
+			}
+			let result = (Number(val1) > Number(val2)) ? val1 : val2;
+			$("#maximum_output").text(result);
+		}
+
+		// reverseString(inputText)
+		// Reverses an entered string and shows result
+		function reverseString(inputText) {
+			if (inputText !== "") {
+				const arr = inputText.split("");
+				const revarr = arr.reverse();
+				document.getElementById("reverse_output").innerHTML = revarr.join("");
+			} else {
+				alert("please enter text");
+				return;
+			}
+		}
+
+		// showLargestWord()
+		// Shows longest word from comma-separated input
+		function showLargestWord() {
+			let val = document.getElementById("largest_string").value;
+			if (val === "") {
+				return alert("please enter text");
+			}
+			let largestWord = findLongestWord(val);
+			document.getElementById("largest_word_output").innerHTML = largestWord;
+		}
+
+		// findLongestWord(val)
+		// Returns the longest word from comma-separated string
+		function findLongestWord(val) {
+			if (val !== "") {
+				const valArray = val.split(",");
+				let largest = valArray[0];
+				for (let x of valArray) {
+					if (largest.length < x.length) {
+						largest = x;
+					}
+				}
+				return largest;
+			}
+			return alert("please fill the input!");
+		}
+
+		// saveCookie()
+		// Saves name + phone into cookies and updates UI
+		function saveCookie() {
+			let name = document.getElementById("cookie_name").value;
+			let phone = document.getElementById("cookie_phone_number").value;
+			if (name === "" || phone === "") {
+				return alert("please fill the input!");
+			}
+			document.cookie = "name=" + encodeURIComponent(name) + "; expires=Fri, 31 Dec 2026 23:59:59 UTC; path=/";
+			document.cookie = "phone=" + encodeURIComponent(phone) + "; expires=Fri, 31 Dec 2026 23:59:59 UTC; path=/";
+			document.getElementById("header_name").innerText = name;
+			document.getElementById("phone").innerText = phone;
+		}
+
+		// getCookie(name)
+		// Returns decoded cookie value by name (or empty string)
+		function getCookie(name) {
+			let decode = decodeURIComponent(document.cookie);
+			let cookies = decode.split("; ");
+			for (let c of cookies) {
+				if (c.startsWith(name + "=")) {
+					return c.split("=")[1];
+				}
+			}
+			return "";
+		}
+
+		// window.onload - load saved cookies into UI on page load
+		window.onload = function () {
+			let savedName = getCookie("name");
+			let savedPhone = getCookie("phone");
+			if (savedName !== "") {
+				document.getElementById("header_name").innerText = savedName;
+			}
+			if (savedPhone !== "") {
+				document.getElementById("phone").innerText = savedPhone;
+			}
+		};
+
+	</script>
+</body>
+
+</html>

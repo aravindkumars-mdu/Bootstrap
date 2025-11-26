@@ -1,0 +1,230 @@
+/*  GLOBAL PAGE STYLING */
+body {
+	background: #f2f4f8;
+	font-family: "Arial", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.heading-1,
+.heading-2,
+.heading-4 {
+	font-weight: 600;
+}
+
+/*  HEADER */
+.header {
+	padding: 20px;
+	color: white;
+}
+
+/* Footer style */
+#my_page_footer {
+	padding: 20px;
+	color: white;
+	border-top: 3px solid rgb(16, 16, 15);
+	margin-bottom: 10px;
+	font-size: 25px;
+	background-color: #333333c4;
+}
+
+/* LEFT NAVIGATION (VERTICAL TABS) */
+.tabs-left {
+	border-right: 2px solid #ddd;
+	margin-top: 20px;
+}
+
+.tabs-left>li {
+	float: none !important;
+	margin-bottom: 5px;
+}
+
+/*TAB LEFT NAV*/
+.tabs-left>li>a {
+	display: block;
+	border-radius: 0;
+	background: #f8f8f8;
+	padding: 10px 15px;
+	border: 1px solid #ddd;
+	color: #333;
+	font-size:24px;
+}
+
+/*TAB LEFT NAV HOVER BACKGROUND COLOR*/
+.tabs-left>li>a:hover {
+	background: #e9ecef;
+}
+
+/*TAB LEFT NAV ACTIVE BACKGROUND COLOR*/
+.tabs-left>li.active>a {
+	background: #0275d8 !important;
+	color: white !important;
+}
+
+/*JAVASCRIPT SECTION*/
+#js_exercise_section {
+	margin-top: 35px;
+}
+
+/* Icons spacing */
+.icon {
+	margin-right: 10px;
+}
+
+/* TAB CONTENT AREA*/
+.tabs-right-content {
+	background: white;
+	border: 1px solid #ddd;
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 4px;
+	min-height: 300px;
+	font-size: 24px;
+}
+
+/*CENTER CONTENT*/
+.center-content {
+	background-color: rgba(35, 153, 128, 0.308);
+}
+
+/* Section heading underline */
+.sub-heading {
+	border-bottom: 2px solid #0275d8;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+/* Header animation text */
+#header_name {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+/* FIELDSET BLOCKS */
+.fieldset {
+	background: #72c5b757;
+	padding: 20px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+	width: 100%;
+	margin-bottom: 25px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* INPUT FIELDS */
+.input-class {
+	height: 40px;
+	font-size: 16px;
+}
+
+/* BUTTONS */
+.button-style {
+	background-color: #0275d8;
+	color: white;
+	padding: 10px;
+	border: none;
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+.button-style:hover {
+	background-color: #025aa5;
+}
+
+/* OUTPUT TEXT */
+#maximum_output,
+#reverse_output,
+#largest_word_output {
+	margin-top: 15px;
+	color: #333;
+}
+
+/* Ensure vertical tabs are full width */
+.tabs-left>li {
+	float: none;
+	width: 100%;
+}
+
+.tabs-left>li>a {
+	display: block;
+	text-align: left;
+}
+
+/* TOAST MESSAGE */
+.custom-toast {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background: #333;
+	color: #fff;
+	padding: 15px 20px;
+	border-radius: 4px;
+	display: none;
+	z-index: 9999;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* TABLET VIEW (768px – 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+	/* Make nav full width */
+	.tabs-left {
+		width: 100%;
+		border-right: none;
+		margin-bottom: 20px;
+	}
+
+	.tabs-left>li {
+		float: none;
+		width: 100%;
+	}
+
+	.tabs-left>li>a {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+
+	/* Content moves below nav */
+	.tablet-left-nav,
+	.tablet-right-content {
+		width: 100%;
+	}
+}
+
+/*  MOBILE VIEW (<768px) — HORIZONTAL NAV */
+@media (max-width: 767px) {
+	.tabs-left {
+		display: flex;
+		overflow-x: auto;
+		white-space: nowrap;
+		border-right: none;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	/* Horizontal menu */
+	.tabs-left>li {
+		display: inline-block;
+		width: auto !important;
+		margin-right: 5px;
+	}
+
+	.tabs-left>li>a {
+		display: inline-block !important;
+		width: auto !important;
+		font-size: 13px;
+		text-align: center !important;
+		padding: 5px 6px;
+	}
+
+	.tabs-right-content {
+		margin-top: 30px;
+	}
+
+	/* Full width columns */
+	.mobile-column {
+		width: 100%;
+	}
+}
